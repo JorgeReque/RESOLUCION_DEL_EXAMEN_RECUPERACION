@@ -18,6 +18,7 @@ namespace Banco1
         private DateTime date;
         private string[] transaccion = { "deposito","retiro"};
         private double monto;
+        private double dinnerMaxoutput=1500;
 
         //Comportamientos
         public CuentaBancaria(string n, double s,string pin)
@@ -26,16 +27,34 @@ namespace Banco1
             saldoActual = s;
             PIN = pin;
         }
+        //method for desc 0.5 $/
+        private double impuesto(deposito){
+            return deposito-0.5;
+        }
+        //method for max retiro
+        private void descDinnerMax(double dinner){
+            if( this.dinnerMaxoutput < 0){
+                this.dinnerMaxoutput =0;
+            }
+            this.dinnerMaxoutput -= dinner;
+        }
+        public bool isValidGetDinner(){
+            if(this.dinnerMaxoutput <= 0 ){
+                return false;
+            }
+            return true;
+        }
+
         public void depositar(double deposito) //
         {
-            saldoActual = saldoActual + deposito;
+            saldoActual = saldoActual + this.impuesto(deposito);
         }
         public void retirar(double retiro)
         {
             if (saldoActual >= retiro)
             {
-                saldoActual = saldoActual - retiro; 
-                
+                saldoActual = saldoActual - this.impuesto(retiro); 
+                this.descDinnerMax(retiro);
             }
         }
 

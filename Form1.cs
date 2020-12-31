@@ -32,7 +32,11 @@ namespace Banco1
         {//call method valid()
             //prepararDtaosinformacionMovimientos(1);
             //AddInfoTransferencia(1);
-            valid(1);
+            if ( cliente1.isValidGetDinner() ){
+                valid(1);
+                return;
+            }
+            MessageBox.Show("Error: exedio el monto de 1500!");
         }
         //method validate registerTransfe.
         public void valid(int opc){
