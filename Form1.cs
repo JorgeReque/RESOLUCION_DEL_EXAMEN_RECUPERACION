@@ -23,22 +23,24 @@ namespace Banco1
         CuentaBancaria cliente1;
         private void btnDepositar_Click(object sender, EventArgs e)
         {//call method valid()
-            prepararDtaosinformacionMovimientos(0);
-            AddInfoTransferencia(0);
+            //prepararDtaosinformacionMovimientos(0);
+            //AddInfoTransferencia(0);
+            valid(0);
         }
 
         private void btnRetirar_Click(object sender, EventArgs e)
         {//call method valid()
-            prepararDtaosinformacionMovimientos(1);
-            AddInfoTransferencia(1);
+            //prepararDtaosinformacionMovimientos(1);
+            //AddInfoTransferencia(1);
+            valid(1);
         }
         //method validate registerTransfe.
-        public void valid(){
+        public void valid(int opc){
             //code get pin(password) of textPIN 
-            if ( cliente1.isEqualsPIN(/*code-getText*/"ejempl:1234") ){
-                prepararDtaosinformacionMovimientos(1);
-                AddInfoTransferencia(1);
-                return
+            if ( cliente1.isEqualsPIN(/*code-getText*/tbPIN.Text) ){
+                prepararDtaosinformacionMovimientos(opc);
+                AddInfoTransferencia(opc);
+                return;
             }
             MessageBox.Show("error:not authorized!");
         }
@@ -73,9 +75,22 @@ namespace Banco1
             MessageBox.Show("usted ah retirado un monto de $/." + a);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        
 
+        private void btnCambiarPIN_Click(object sender, EventArgs e)
+        {
+           string newPin= tbCambiarPIN.Text;
+            string oldPin = tbPIN.Text;
+           if (cliente1.updatePin(oldPin, newPin))
+            {
+
+                MessageBox.Show("Credenciales actualizadas");
+                return;
+            }
+
+            MessageBox.Show("Credenciales no validas");
         }
+
+        
     }
 }

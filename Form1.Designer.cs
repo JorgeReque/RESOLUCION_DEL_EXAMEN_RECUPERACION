@@ -39,6 +39,10 @@
             this.rtbHistorialMovimientos = new System.Windows.Forms.RichTextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label4 = new System.Windows.Forms.Label();
+            this.tbPIN = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnCambiarPIN = new System.Windows.Forms.Button();
+            this.tbCambiarPIN = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tbUsuario
@@ -65,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 66);
+            this.label1.Location = new System.Drawing.Point(128, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 3;
@@ -74,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(104, 125);
+            this.label2.Location = new System.Drawing.Point(128, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 4;
@@ -83,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(104, 195);
+            this.label3.Location = new System.Drawing.Point(128, 192);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 5;
@@ -126,11 +130,48 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Movimientos";
             // 
+            // tbPIN
+            // 
+            this.tbPIN.Location = new System.Drawing.Point(233, 12);
+            this.tbPIN.Name = "tbPIN";
+            this.tbPIN.Size = new System.Drawing.Size(136, 20);
+            this.tbPIN.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(128, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(25, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "PIN";
+            // 
+            // btnCambiarPIN
+            // 
+            this.btnCambiarPIN.Location = new System.Drawing.Point(12, 15);
+            this.btnCambiarPIN.Name = "btnCambiarPIN";
+            this.btnCambiarPIN.Size = new System.Drawing.Size(75, 23);
+            this.btnCambiarPIN.TabIndex = 12;
+            this.btnCambiarPIN.Text = "Cambiar PIN";
+            this.btnCambiarPIN.UseVisualStyleBackColor = true;
+            this.btnCambiarPIN.Click += new System.EventHandler(this.btnCambiarPIN_Click);
+            // 
+            // tbCambiarPIN
+            // 
+            this.tbCambiarPIN.Location = new System.Drawing.Point(12, 56);
+            this.tbCambiarPIN.Name = "tbCambiarPIN";
+            this.tbCambiarPIN.Size = new System.Drawing.Size(86, 20);
+            this.tbCambiarPIN.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 362);
+            this.ClientSize = new System.Drawing.Size(824, 400);
+            this.Controls.Add(this.tbCambiarPIN);
+            this.Controls.Add(this.btnCambiarPIN);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tbPIN);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rtbHistorialMovimientos);
             this.Controls.Add(this.btnRetirar);
@@ -143,7 +184,7 @@
             this.Controls.Add(this.tbUsuario);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+          
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +203,10 @@
         private System.Windows.Forms.RichTextBox rtbHistorialMovimientos;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbPIN;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnCambiarPIN;
+        private System.Windows.Forms.TextBox tbCambiarPIN;
     }
 }
 
