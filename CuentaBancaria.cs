@@ -11,6 +11,7 @@ namespace Banco1
         //Atributos
         private string nombreApellido;
         private double saldoActual;
+        private string PIN;//contraseña de acceso
 
         private List<string> movimientos = new List<string>();
 
@@ -66,7 +67,28 @@ namespace Banco1
             }
             return informacion;
         }
+        //---------------------------add code
+        //method validate length PIN max 4dig.
+        //return true or false => FOR REGISTER PIN
+        public bool isValidPin(string pin){
+            if (length.pin == 4){
+                return true;
+            }
+            return false;
+        }
+        //method validate equals PIN
+        public bool isEqualsPIN(string pin){
+            if ( this.PIN != pin ) {
+                return false
+            }
+            return true
+        }
 
-
+        //method replace password
+        public void updatePin(string pin){
+            if ( this.isValidPin(pin) ){
+                this.PIN = pin;
+            }  
+        }
     }
 }

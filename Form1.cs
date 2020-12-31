@@ -15,22 +15,32 @@ namespace Banco1
         public Form1()
         {
             InitializeComponent();
-            cliente1 = new CuentaBancaria("Lus Mercedez  ", 1200);
+            cliente1 = new CuentaBancaria("Lus Mercedez  ", 1200,"1234"); //pin de 4 digitos
             tbUsuario.Text = cliente1.mostrarNombre();
             tbSaldoActual.Text = Convert.ToString(cliente1.mostrarSaldo());
         }
 
         CuentaBancaria cliente1;
         private void btnDepositar_Click(object sender, EventArgs e)
-        {
+        {//call method valid()
             prepararDtaosinformacionMovimientos(0);
             AddInfoTransferencia(0);
         }
 
         private void btnRetirar_Click(object sender, EventArgs e)
-        {
+        {//call method valid()
             prepararDtaosinformacionMovimientos(1);
             AddInfoTransferencia(1);
+        }
+        //method validate registerTransfe.
+        public void valid(){
+            //code get pin(password) of textPIN 
+            if ( cliente1.isEqualsPIN(/*code-getText*/"ejempl:1234") ){
+                prepararDtaosinformacionMovimientos(1);
+                AddInfoTransferencia(1);
+                return
+            }
+            MessageBox.Show("error:not authorized!");
         }
 
         //event add info transferencias
