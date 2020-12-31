@@ -1,0 +1,20 @@
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\bin\Debug\Banco1.exe.config
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\bin\Debug\Banco1.exe
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\bin\Debug\Banco1.pdb
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\obj\Debug\Banco1.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\obj\Debug\Banco1.Form1.resources
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\obj\Debug\Banco1.Properties.Resources.resources
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\obj\Debug\Banco1.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\obj\Debug\Banco1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\obj\Debug\Banco1.exe
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\Banco1\obj\Debug\Banco1.pdb
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\bin\Debug\Banco1.exe.config
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\bin\Debug\Banco1.exe
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\bin\Debug\Banco1.pdb
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\obj\Debug\Banco1.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\obj\Debug\Banco1.Form1.resources
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\obj\Debug\Banco1.Properties.Resources.resources
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\obj\Debug\Banco1.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\obj\Debug\Banco1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\obj\Debug\Banco1.exe
+C:\Users\HP\Desktop\2020-2\POO\semana6.Metodos\CUENTA BANCARIA\Banco1\obj\Debug\Banco1.pdb
